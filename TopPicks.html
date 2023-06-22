@@ -1,0 +1,166 @@
+<!doctype html> 
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link href="Styles/styles.css" rel="stylesheet" type="text/css">
+
+    <title>WeeboUnion</title>  
+</head>
+
+<body>
+
+    <!--NAV bar-->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-logo">
+          <img src="Images/navlogo.jpg" alt="Logo"> 
+        </a>
+            <ul class="navbar-pages">
+                <li class="navbar-page1"><a href="TopPicks.html">Top Picks</a></li>
+                <li class="navbar-page2"><a href="Upcoming.html">Upcoming</a></li>
+                <li class="navbar-page3"><a href="Save.html">Save For Later</a></li>
+                <li class="navbar-page4"><a href="About.html">About Us</a></li>
+            </ul>
+    </nav>
+
+    <!--our top picks-->
+
+    <div class="picks-container">
+
+        <div class="season-image">
+          <img src="Images/spring.jpeg" alt="Image of season">
+          <div class="picks-title">
+            <h1><b>Best Anime Of Spring 2023</b></h1>
+          </div>
+        
+        </div>
+
+        <div class="picks-content">
+            <div class="pick3">
+                
+                    <button type="button" class="save-btn" id="pick3-save">Save for Later</button>
+                    <h2><b>Pick 3: Skip And Loafer</b></h2>
+                    <div class="pick3-content">
+                        <div class="pick3-image"><img src="Images/pick3.jpeg" alt="Image of anime"></div>
+                            <p>A small-town girl moves to the big city to chase her dream of becoming a lawyer, politician, and eventual mayor of her village. Mitsumi Iwakura is nothing if not ambitious, but the confident teenager might have overestimated her ability to quickly adapt to Tokyo's hectic lifestyle. Unsurprisingly, her first day at her new high school does not quite go to plan, although she does manage to make a new friend along the way.</p>
+                            <p>Skip and Loafer" is a grounded slice-of-life anime that explores high school life. The story revolves around Mitsumi, a well-developed character with relatable goals, quirks, and insecurities. The anime provides glimpses of Mitsumi's life before Tokyo, offering valuable context for understanding her current personality.</p>
+                            <p>In addition to a strong lead, the anime flourishes with an intriguing cast of characters. Sousuke Shima, Mitsumi's potential love interest, is portrayed as easy-going and charming but carries an air of mystery. Supporting characters like Mika, Makoto, and Yuzuki bring their own unique flavors to the story, influencing Mitsumi and impacting her journey in various ways. Overall, "Skip and Loafer" presents a refreshing and engaging slice-of-life drama with well-rounded characters.</p>
+                    </div>
+            </div>
+
+            <div class="pick2">
+              
+                    <button type="button" class="save-btn" id="pick2-save">Save for Later</button>
+                    <h2><b>Pick 2: Hell's Paradise</b></h2>
+                    <div class="pick2-content">
+                         <div class="pick2-image"><img src="Images/pick2.jpeg" alt="Image of anime"></div>
+                            <p>Except for maybe one show, Hell's Paradise is the most hyped new anime of Spring 2023. Based on a Shonen Jump+ manga by Yuji Kaku, the story follows a group of convicts who are sent to a mysterious island to find an elixir of life. The person who discovers this powerful item will be absolved of their crimes. Naturally, this turns the excursion into something of a battle royale as everyone seeks to be the "victor;" however, they have more things to fear than just serial killers and assassins.</p>
+                            <p>Hell's Paradise has been a wild ride so far. Along with boasting some of the most visceral and gory action sequences of the entire year, the anime is also drenched in mystery courtesy of its haunting central setting. The show's characterization has also been top-notch, and that extends beyond its main characters. Speaking of the latter, Gabimaru the Hollow and his handler, Sagiri, are both fantastic leads.</p>
+                    </div>
+            </div>
+
+            <div class="pick1">
+                
+                    <button type="button" class="save-btn" id="pick1-save">Save for Later</button>
+                    <h2><b>Pick 1: Oshi No Ko</b></h2>
+                    <div class="pick1-content"> 
+                        <div class="pick1-image"><img src="Images/pick1.jpeg" alt="Image of anime"></div>
+
+                        <div class="like-container">
+
+                            <div class="like-content">
+                            <form id="like-form">
+                                <button type="submit" class="likebtn">Like:</button>
+                            </form>
+                    
+                            <div class="like-number"> <p id="like-count">0 Likes!</p> </div>
+                    
+                            </div>
+                    
+                        </div>
+
+                            <p>Based on Aka Akasaka's seinen manga, Oshi no Ko made an instant splash by debuting with a lengthy opening episode that effectively acted as a prequel movie for the rest of the series. If that chapter established the show as a front-runner to be the best Spring 2023 anime, then episode 6 gave it a near-insurmountable lead. Just to be clear, this statement is entirely a reflection of Oshi no Ko's quality rather than a criticism of its contemporaries.</p>
+                            <p>"Oshi no Ko" tells the story of Gorou Amemiya, a doctor who is reincarnated as one of his favorite idol's twins after being mysteriously killed. With memories of his past life intact, Gorou enjoys his new life until tragedy strikes. Years later, Gorou infiltrates the entertainment industry seeking revenge. The anime explores different media subcultures, including idols, reality shows, and low-budget series, shedding light on their not always positive aspects.</p>
+                            <p>While "Oshi no Ko" presents realistic and sometimes uncomfortable themes such as cyberbullying and fan obsession, it also incorporates humor and elements of wish fulfillment. It provides a balanced perspective, showcasing both the allure of superstardom and the darker sides of the entertainment industry. This approach intensifies the impact of the show's poignant moments.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Form button-->
+
+    <div class="submit-form-container">
+
+        <div class="form-content">
+            <form action="/submit-vote" method="post">
+                <h3>Which show would you like a review on next?</h3>
+                
+                <input type="radio" id="option1" name="vote" value="option1">
+                <label for="option1">Heavenly Delusion</label><br>
+                
+                <input type="radio" id="option2" name="vote" value="option2">
+                <label for="option2">Demon Slayer: Kimetsu no Yaiba</label><br>
+                
+                <input type="radio" id="option3" name="vote" value="option3">
+                <label for="option3">Mashle: Magic and Muscles</label><br>
+                
+                <button type="submit">Submit Vote</button>
+              </form>
+              
+        </div>
+
+    </div>
+
+    
+
+
+    <!--newsletter-->
+
+    <div class="news-section-break"></div>
+
+    <div class="news-container">
+        <h2>Subscribe to our Newsletter for all your Anime news, release date and review related content!</h2>
+            <form class="newsletter">
+                <input type="text" id="email" placeholder="Email address"><br>
+            </form>
+            <div class="news-button-container">
+                <button class="news-button">Sign Up!</button>
+            </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script type='text/javascript' src="/JS/main.js"></script> 
+    <script type='text/javascript' src="/JS/JQUERY.js"></script> 
+</body>
+
+<footer class="foot-back">
+   
+    <div class="footer">
+        <a href="index.html">
+        <img src="Images/navlogo.jpg" alt="Logo">
+        </a>
+
+        <div class="social-icons">
+            <a href="https://discord.com/login" class="fa fa-Discord">
+            <img src="Images/disco.jpeg" alt="Discord">
+            </a>
+            <a href="https://www.facebook.com/login">
+            <img src="images/FB.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/accounts/login">
+            <img src="Images/IG.webp" alt="Instagram">
+            </a>
+        </div>
+        
+    </div>
+    <div class="copyright">
+        <p class="copyright-text">Copyright © WeeboUnion 2023. All Rights Reserved</p>
+    </div>
+
+</footer>
+
+</html>

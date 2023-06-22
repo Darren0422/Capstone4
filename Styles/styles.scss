@@ -1,0 +1,686 @@
+//Colours for various aspects of the site
+$maintext-colour:rgb(0, 0, 0);
+$back-colour: rgb(255, 255, 255);
+
+
+//Background styling
+body {
+    background-color: $back-colour;
+}
+
+
+//Text styling
+h1 {
+    color: $maintext-colour;
+    font-family: 'helvetica';
+    text-align: center;
+    font-size: 55px; 
+}
+
+h2{
+    color: $maintext-colour;
+    font-family: 'helvetica';
+    text-align: center;
+    font-size: 45px;
+}
+
+h2{
+    color: $maintext-colour;
+    font-family: 'helvetica';
+    text-align: center;
+    font-size: 35px;
+}
+
+p {
+    color: $maintext-colour;
+    font-family: 'helvetica';
+    text-align: center;
+    font-size: 25px; 
+}
+
+q {
+  color: $maintext-colour;
+  font-family: 'helvetica';
+  text-align: center;
+  font-size: 25px; 
+}
+
+//INDEX.html
+//<!--NAV bar-->
+.navbar {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  
+  .navbar-logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  .navbar-pages {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .navbar-pages li {
+    font-size: 16px;
+
+  }
+  
+  .navbar-pages li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    padding-right: 10px;
+  }
+  
+  .navbar-pages li a:hover {
+    color: gray;
+  }
+  
+
+
+
+
+//<!--jumbotron-->
+.releases-jumbotron {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .releases-jumbotron h1.display-4 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .releases-jumbotron p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .releases-jumbotron hr.my-4 {
+    margin: 20px 0;
+  }
+  
+  .releases-jumbotron a.btn-primary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 5px; 
+    line-height: 1.5; 
+    width: 100px; 
+    height: 30px; 
+    margin: 0 auto; 
+    text-align: center; 
+  }
+  
+  
+  .releases-jumbotron a.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
+  
+
+
+//<!--our top picks-->
+.picks-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    padding: 40px;
+    background-color: rgb(249, 249, 250);
+
+  }
+  
+  .picks-image {
+    margin-bottom: 10px;
+  }
+  
+  .picks-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .picks-content {
+    margin-bottom: 10px;
+    
+  }
+  
+  .picks-content a {
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .picks-content h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-align: center;
+    color: #0069d9;
+    
+  }
+  
+  .picks-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+  }
+  
+  
+
+  
+//<!--newsletter-->
+.news-section-break {
+    background-color: black;
+    padding: 5px
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 30px
+    
+  }
+  
+  .news-container h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+  }
+  
+  .newsletter {
+    margin-bottom: 20px;
+  }
+  
+  .newsletter input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .news-button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .news-button-container {
+    padding-bottom: 15px;
+
+  }
+  
+
+
+
+//<!--Footer-->
+.footer {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+  
+  .footer img {
+    height: 100px;
+    width: auto;
+  }
+  
+  .footer .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer .social-icons a {
+    margin-right: 10px;
+    padding: 10px;
+  }
+  
+  .footer .social-icons img {
+    height: 30px;
+    width: 30px;
+  }
+  
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    color: white;
+    background-color: #000;
+    font-size: 14px;
+    margin-top: 10px;
+    
+  }
+
+  .copyright-text {
+    color: white;
+    font-size: 10px;
+    text-align: center
+  }
+
+  .foot-back {
+    background-color: #000;
+  }
+
+
+  
+  
+  
+
+
+//TopPicks
+.season-image {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  
+  .season-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .picks-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+    font-weight: 900;
+    font-family: 'Helvetica';
+    text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  }
+
+.picks-content{
+    text-align: left;
+}  h2{
+    text-align: left;
+
+    img{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+    }
+}
+
+.picks-content p{
+  padding: 10px
+
+}
+
+.pick3-image {
+  display: flex;
+  justify-content: left;
+  align-items: left; 
+  height: 400px;
+  width: 800px;
+  padding: 5px;
+}
+
+.pick2-image {
+  display: flex;
+  justify-content: left;
+  align-items: left; 
+  height: 400px;
+  width: 800px;
+  padding: 5px;
+}
+
+.pick1-image {
+  display: flex;
+  justify-content: left;
+  align-items: left; 
+  height: 400px;
+  width: 800px;
+  padding: 5px;
+}
+
+.submit-form-container {
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+//Upcoming
+.upcoming-image {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.upcoming-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upcoming-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 900;
+  font-family: 'Helvetica';
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+//
+
+.upcoming-image{
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+.upcoming-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.upcoming-content h2 {
+  text-align: center;
+
+}
+  
+.upcoming-content p {
+  text-align: center;
+  font-size: 20px; 
+}
+
+.winter-table {
+  padding: 10px;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.winter-table-box{
+  padding: 10px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.winter-table th, .winter-table td {
+  border: 1px solid black; 
+}
+
+
+.spring-table {
+  padding: 10px;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.spring-table-box{
+  padding: 10px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.spring-table th, .spring-table td {
+  border: 1px solid black; 
+}
+
+.summer-table {
+  padding: 10px;
+  
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.summer-table-box{
+  padding: 10px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.summer-table th, .summer-table td {
+  border: 1px solid black; 
+}
+
+.fall-table {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.fall-table-box{
+  padding: 10px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.fall-table th, .fall-table td {
+  border: 1px solid black; 
+}
+
+
+//Aboutus
+.aboutus-content {
+  padding: 20px;
+}
+
+.Thumbsup {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-image {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw; 
+  height: 100%;
+  object-fit: cover;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .quote-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+//save
+.save-btn {
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.save-image {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+.save-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.save-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 900;
+  font-family: 'Helvetica';
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+.save-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+//COMMENT
+.comment-container{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  
+}
+
+.commentbtn {
+  padding: 3px 10px;
+  margin: 10px;
+  margin-left: 0px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+//LIKE
+.likebtn {
+  color: white;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-left: 5px;
+}
+
+
+//CONTACT US
+
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  padding-left: 50px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  
+}
+
+.buttonholder button {
+  padding: 3px 10px;
+  margin: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.buttonholder{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+  
